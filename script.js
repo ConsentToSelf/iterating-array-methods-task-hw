@@ -93,4 +93,38 @@ const objArrSortReduce = objArrSort.reduce(
 
 let sortArr = [[14, 45], [1], ["a", "c", "d"]];
 let resSortArr = sortArr.sort((prev, next) => prev.length - next.length);
-console.log(resSortArr);
+// console.log(resSortArr);
+
+// six
+
+/*
+Есть массив объектов:
+[
+{cpu: 'intel', info: {cores:2, сache: 3}},
+
+{cpu: 'intel', info: {cores:4, сache: 4}},
+
+{cpu: 'amd', info: {cores:1, сache: 1}},
+
+{cpu: 'intel', info: {cores:3, сache: 2}},
+
+{cpu: 'amd', info: {cores:4, сache: 2}}
+
+]
+Отсортировать их по возрастающему количеству ядер (cores).
+*/
+const computerArr = [
+  { cpu: "intel", info: { cores: 2, сache: 3 } },
+
+  { cpu: "intel", info: { cores: 4, сache: 4 } },
+
+  { cpu: "amd", info: { cores: 1, сache: 1 } },
+
+  { cpu: "intel", info: { cores: 3, сache: 2 } },
+
+  { cpu: "amd", info: { cores: 4, сache: 2 } },
+];
+const computerArrSort = computerArr.sort(
+  (prev, next) => prev.info.cores - next.info.cores
+);
+console.log(computerArrSort);

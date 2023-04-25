@@ -26,4 +26,14 @@ let arrSecond = [12, 4, 50, 1, 0, 18, 40];
 const filterArr = arrSecond.some((num) => {
   return num === 0;
 });
-console.log(filterArr);
+// console.log(filterArr);
+
+// third
+
+/*
+Проверить, все элементы массива имеют длину более 3х символов ['yes', 'hello', 'no', 'easycode', 'what']. Если да - вернуть true
+*/
+const strArr = ["yes", "hello", "no", "easycode", "what"];
+
+const strArrEvery = strArr.every((element) => element.length > 3);
+// console.log(strArrEvery);

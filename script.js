@@ -74,13 +74,16 @@ const objArr = [
   { char: "e", index: 7 },
 ];
 
-const objArrSort = objArr.sort((prev, next) => prev.index - next.index);
+const funcObjSor = (arr) => {
+  const objArrSort = arr.sort((prev, next) => prev.index - next.index);
 
-const objArrSortReduce = objArrSort.reduce(
-  (acc, user) => (acc += user.char),
-  []
-);
-
+  const objArrSortReduce = objArrSort.reduce(
+    (acc, user) => (acc += user.char),
+    []
+  );
+  return objArrSortReduce;
+};
+console.log(funcObjSor(objArr));
 // console.log(objArrSortReduce);
 
 // five

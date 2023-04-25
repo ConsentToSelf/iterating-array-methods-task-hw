@@ -15,4 +15,15 @@ let newArr = arr.map((i) => {
     odd: Boolean(i % 2),
   };
 });
-console.log(newArr);
+// console.log(newArr);
+
+// second
+
+/*
+Проверить, содержит ли массив [12, 4, 50, 1, 0, 18, 40] элементы, равные нулю. Если да - вернуть true.
+*/
+let arrSecond = [12, 4, 50, 1, 0, 18, 40];
+const filterArr = arrSecond.some((num) => {
+  return num === 0;
+});
+console.log(filterArr);
